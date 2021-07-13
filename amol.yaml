@@ -1,0 +1,17 @@
+domains:
+- domain: amoltrucking.com
+  type: PRIMARY
+- domain: www.amoltrucking.com
+  type: ALIAS
+name: amol
+region: blr
+static_sites:
+- environment_slug: html
+  github:
+    branch: master
+    deploy_on_push: true
+    repo: taruns-ghrix/amol
+  name: amol
+  routes:
+  - path: /
+  source_dir: /
