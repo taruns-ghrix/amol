@@ -1,7 +1,7 @@
 domains:
 - domain: amoltrucking.com
   type: PRIMARY
-- domain: amoltrucking.com
+- domain: www.amoltrucking.com
   type: ALIAS
 name: amol
 region: blr
