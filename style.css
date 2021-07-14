@@ -59,6 +59,8 @@
 
 /*********Global-Css***********/
 body {overflow-x: hidden;}
+html {overflow-x: hidden;}
+a:hover {cursor: pointer;}
 body .container {     max-width: 1200px; }
 body .btn-primary:hover {background: #000000 !important;}
 p {font-size: 14px;line-height: 24px;color: #333333;font-family: "Montserrat-Regular";}
@@ -67,7 +69,6 @@ h4 { font-size: 24px !important; line-height: 29px !important; color: #113A72; f
 .darkHeader .cs-nav-main {     position: fixed;     top: 0;     width: 100%; }
 .darkHeader .cs-nav-main { position: fixed; top: 0; width: 100%; box-shadow: 0px 9px 28px 8px rgb(0 0 0 / 5%); filter: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.08)); background: #ffffff; -webkit-transition-duration: 1s; -moz-transition-duration: 1s; -o-transition-duration: 1s; -ms-transition-duration: 1s; transition-duration: 1s; z-index:99; }
 button.btn:focus {box-shadow:none !important;}
-
 /********* Global-Css***********/
 
 
@@ -79,6 +80,8 @@ button.btn:focus {box-shadow:none !important;}
 .cs-nav-main nav.navbar ul li a { font-family: "Montserrat-Regular"; font-size: 13px; line-height: 16px; color: #000000 !important;    padding: 15px !important; }
 .cs-nav-main nav.navbar ul li:last-child a { color: #ffffff !important; background: #E63C2D; box-shadow: 0px 9px 80px rgb(219 42 39 / 18%), 0px 2.71324px 24.1177px rgb(219 42 39 / 12%), 0px 1.12694px 10.0172px rgb(219 42 39 / 9%), 0px 0.407592px 3.62304px rgb(219 42 39 / 6%); border-radius: 5px; padding: 15px 30px !important; margin-left: 15px; font-size: 16px; line-height: 20px; font-family: 'Montserrat'; }
 .cs-nav-main nav.navbar ul li:last-child a:hover {     background: #000000 !important; }
+.cs-nav-main nav.navbar ul li a.active {color: #E63C2D !important;}
+.cs-nav-main nav.navbar ul li:last-child a.active {     color: #ffffff !important; }
 /*********** /Navbar***********/
 
 
@@ -128,18 +131,32 @@ button.btn:focus {box-shadow:none !important;}
 .why-choose .cs-meet-amol-right ul {padding: 0;}
 .why-choose .cs-meet-amol-right ul li { list-style-type: none; color: #ffffff; font-family: "Montserrat-SemiBold"; font-size: 14px; line-height: 30px; background: url(./images/check-mark.png); background-repeat: no-repeat; padding-left: 25px; background-position: left center; }
 .why-choose .cs-meet-amol-right button.btn { background: #ffffff; color: #DB2A27 !important; }
-
 /*********** /section3***********/
 
 
 /***********section4***********/
-.cs-client-re {padding-top: 100px;    padding-bottom: 100px; }
+.cs-client-re {padding-top: 100px;    padding-bottom: 50px; }
 .cs-client-re .cs-client-re-col1 { width: 100%; max-width: 650px; margin: 0 auto; text-align: center; }
 .cs-client-re .cs-client-re-col1 p{ width: 100%; max-width: 540px; margin: 0 auto; text-align: center; }
 
+.cs-meet-amol-right {position: relative;}
+.cs-meet-amol-right div#carouselExampleCaptions {position: unset;}
+
 
 /***********slider***********/
-.cs-client-re2 {background: url(./images/slider-sec-bg.jpg); background-size: 100%; background-position: center center; background-repeat: no-repeat;}
+.cs-client-re2 {background: url(./images/slider-sec-bg.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;padding-top: 10%; padding-bottom: 10%;}
+.cs-meet-amol-right .carousel-inner { float: left; width: 100%; height: 100%; padding-top: 45px; background-image: url(./images/slider-tip.png); background-position: 30px 100%; padding-bottom: 18px; background-repeat: no-repeat; }
+.cs-meet-amol-right .carousel-inner .carousel-item { background: #ffffff; padding: 45px; }
+.cs-meet-amol-right .carousel-inner img.d-block { float: left; width: auto; position: absolute; top: -40px; }
+body .cs-meet-amol-right button.carousel-control-prev { position: absolute; bottom: 85px !important; top: unset !important; left: 70%; width: 37px; height: auto; border: 1px solid #113A72; background: transparent; background-image: url(./images/leftarrowblue.png); background-repeat: no-repeat; background-position: center center; padding: 0 !important; height: 38px !important; opacity: 1 !important; box-shadow: none; border-radius: 0; background-size: auto; }
+body .cs-meet-amol-right button.carousel-control-next { position: absolute; bottom: 85px !important; top: unset !important; left: 78%; width: 37px; height: auto; border: 1px solid #113A72; background: transparent; background-image: url(./images/rightarrowblue.png); background-repeat: no-repeat; background-position: center center; padding: 0 !important; height: 38px !important; opacity: 1 !important; box-shadow: none; border-radius: 0; background-size: auto; }
+body .cs-meet-amol-right button.carousel-control-prev span { visibility: hidden; }
+body .cs-meet-amol-right button.carousel-control-next span { visibility: hidden; }
+body .cs-meet-amol-right button.carousel-control-prev:hover { background-color: #DB2A27; border: #DB2A27; background-image: url(./images/leftarrowwhite.png); opacity: 1; background-size: auto; }
+body .cs-meet-amol-right button.carousel-control-next:hover { background-color: #DB2A27; border: #DB2A27; background-image: url(./images/rightarrowwhite.png); opacity: 1; background-size: auto; }
+.cs-meet-amol-right .carousel-inner .carousel-caption { float: left; width: 100%; position: unset;padding: 0;}
+.cs-meet-amol-right .carousel-inner .carousel-caption p { float: left; width: 100%; font-size: 18px; line-height: 30px; color: #113A72; text-align: left; font-family: "Montserrat-SemiBold"; }
+.cs-meet-amol-right .carousel-inner .carousel-caption p span {margin-left:15px;color:#000000;}
 /*********** /slider***********/
 
 
@@ -164,10 +181,9 @@ button.btn:focus {box-shadow:none !important;}
 
 
 /***********section6***********/
-.cs-contact-us {padding-top: 120px;}
-.cs-contact-us .cs-contact-us-col1 { width: 100%; max-width: 650px; margin: 0 auto; text-align: center;margin-bottom: 40px; }
+.cs-contact-us {padding-top: 100px;}
+.cs-contact-us .cs-contact-us-col1 { width: 100%; max-width: 650px; margin: 0 auto; text-align: center;margin-bottom: 50px; }
 .cs-contact-us .cs-contact-us-col1 p{ width: 100%; max-width: 540px; margin: 0 auto; text-align: center; }
-
 /*********** /section6***********/
 
 
@@ -175,31 +191,83 @@ button.btn:focus {box-shadow:none !important;}
 /*********** section7***********/
 .cs-footer { background: #113A72; padding-top: 55px;}
 .cs-contact-us p { margin: -7px; }
-
 .cs-footer .cs-footer-col1 { text-align: center; }
 .cs-footer .cs-footer-col2 { text-align: center; }
 .cs-footer .cs-footer-col3 { text-align: center; }
-
 .cs-footer .cs-footer-col1 ul { padding: 0; float: left; width: 100%; }
 .cs-footer .cs-footer-col2 ul { padding: 0; float: left; width: 100%; }
 .cs-footer .cs-footer-col3 ul { padding: 0; float: left; width: 100%; }
-
 .cs-footer .cs-footer-col1 ul li { list-style-type: none; }
 .cs-footer .cs-footer-col2 ul li { list-style-type: none;    margin-bottom: 10px; }
 .cs-footer .cs-footer-col3 ul li { list-style-type: none; display: inline-block; padding: 0px 10px; }
-
 .cs-footer .cs-footer-col1 .cs-footer-col1-inner { max-width: 220px; margin: 0 auto; text-align: left; }
 .cs-footer .cs-footer-col1 .cs-footer-col1-inner img { margin-bottom: 25px; }
 .cs-footer .cs-footer-col1 ul li.nmber { margin-bottom: 15px; }
 .cs-footer .cs-footer-col1 ul li.nmber a { font-size: 24px; line-height: 29px; color: #FFFFFF; font-family: "Montserrat-Bold"; background: url(./images/footer-phone.png); background-repeat: no-repeat; background-position: left center; padding-left: 35px; }
 .cs-footer .cs-footer-col1 ul li.cs-mail a { font-size: 13px; line-height: 16px; color: #FFFFFF; font-family: 'Montserrat'; background: url(./images/footer-mail.png); background-repeat: no-repeat; background-position: left center; padding-left: 35px; }
 .cs-footer .cs-footer-col2 h5, .cs-footer .cs-footer-col3 h5 { font-size: 18px; line-height: 22px; text-align: center; color: #FFFFFF; margin-bottom: 25px; font-family: "Montserrat-Bold"; }
-
-
-
 .cs-footer .cs-footer-col2 ul li a { font-size: 13px; line-height: 16px; text-align: center; color: #FFFFFF; margin-bottom: 20px; font-family: "Montserrat-Regular"; }
 .cs-footer .cs-footer-col3 p { max-width: 200px; margin: 0 auto 25px; font-size: 13px; line-height: 23px; text-align: center; color: #FFFFFF; font-family: "Montserrat-Regular"; }
-
 .cs-footer .cs-footer-row2 { border-top: 1px solid rgb(255 255 255 / 50%); margin-top: 25px; padding-top: 25px;    padding-bottom: 25px; }
 .cs-footer .cs-footer-row2 p { margin: 0; text-align: center; font-size: 13px; line-height: 16px; color: #E0E0E0; font-family: "Montserrat-Regular"; }
 /*********** /section7***********/
+
+
+@media (min-width:0px) and (max-width:567px){
+body .cs-meet-amol-right button.carousel-control-prev {left: 65%;}
+.cs-meet-amol-right .carousel-inner img.d-block { float: left; width: auto; position: absolute; top: -16px; width: 30px; }
+}
+@media (min-width:0px) and (max-width:767px){
+.banner-main {background-size: cover;}
+.banner-main .cs-banner-col h1 { font-size: 30px; line-height: 45px; color: #ffffff; font-family: "Montserrat-Bold"; }	
+.banner-main .cs-banner-col p { font-size: 18px; line-height: 29px; color: #ffffff; font-family: "Montserrat-Regular"; }
+.banner-main .cs-banner-col button.btn { margin-top: 15px; }
+.cs-meet-amol-right { margin-top: 45px !important; }
+h2 {font-size: 28px !important;line-height: 32px !important;}
+.trans-ser { background: #f9f9f9; padding-top: 50px; padding-bottom: 30px; }
+.trans-ser-col2 ul li { list-style-type: none; float: left; width: 100%; margin: 0; background: #ffffff; text-align: center; padding: 45px; box-shadow: 0px 0px 40px rgb(0 0 0 / 15%); margin-bottom: 15px; }
+h4 { font-size: 22px !important; line-height: 29px !important; color: #113A72; font-family: "Montserrat-Bold"; }
+.why-choose .cs-meet-amol-right { padding: 45px; padding-top: 0; }
+.cs-client-re { padding-top: 50px; padding-bottom: 50px; }
+.cs-latest-news { padding-top: 50px; }
+.cs-latest-news-colleft .inner-inner { padding-bottom: 25px; }
+.cs-latest-news-colleft {margin-bottom: 15px;}
+.cs-latest-news-colright .colleft1, .cs-latest-news-colright .colright1 {padding-bottom: 15px;}
+.cs-latest-news-colright .colleft1 .inner img, .cs-latest-news-colright .colright1 .inner img { width: 100%; }
+.cs-contact-us {     padding-top: 40px; }
+.cs-footer .cs-footer-col1 .cs-footer-col1-inner { max-width: 220px; margin: 0 auto; text-align: center; }
+.cs-nav-main nav.navbar ul li:last-child a { text-align: center; }
+.cs-footer .cs-footer-col2 h5, .cs-footer .cs-footer-col3 h5 {  margin-top: 25px; }
+.cs-meet-amol-right .carousel-inner .carousel-caption { float: left; width: 100%; position: unset; padding: 0; display: block !important; }
+}
+
+
+@media (min-width:0px) and (max-width:991px){
+body {overflow-x:hidden;}
+}
+
+
+@media (min-width:768px) and (max-width:991px){
+.banner-main {background-size: cover;}
+.banner-main .cs-banner-col h1 { font-size: 40px; line-height: 55px; color: #ffffff; font-family: "Montserrat-Bold"; }	
+h2 {font-size: 35px !important;line-height: 45px !important;}
+.cs-nav-main nav.navbar ul li:last-child a { text-align: center; }	
+.trans-ser-col2 ul li { list-style-type: none; float: left; width: 48%; margin: 1%; background: #ffffff; text-align: center; padding: 30px; box-shadow: 0px 0px 40px rgb(0 0 0 / 15%); }
+.why-choose .cs-meet-amol-left {padding: 0;width: 100%;}
+.why-choose .cs-meet-amol-right {width: 100%;}
+.cs-latest-news-colleft {width: 100% !important;}
+.cs-latest-news-colright {width: 100% !important;}
+.cs-latest-news-colleft {margin-bottom: 25px;}
+.cs-latest-news-colleft .inner-inner { padding-bottom: 25px; }
+.cs-latest-news-colright .colleft1 img, .cs-latest-news-colright .colright1 img { width: 100%; }
+body .cs-meet-amol-right button.carousel-control-prev {left: 65%;}
+}
+
+
+@media (min-width:992px) and (max-width:1100px){
+.trans-ser-col2 ul li { list-style-type: none; float: left; width: 48%; margin: 1%; background: #ffffff; text-align: center; padding: 45px; box-shadow: 0px 0px 40px rgb(0 0 0 / 15%); }
+.cs-latest-news-colright .colleft1 img, .cs-latest-news-colright .colright1 img { width: 100%; }
+.why-choose .cs-meet-amol-right p { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden; }
+.banner-main { background-size: cover; }
+}
+
